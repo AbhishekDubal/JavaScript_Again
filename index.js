@@ -1,11 +1,18 @@
-//1st and easy way:
 
-// let usename= window.prompt("Enter you name : ");
-// document.getElementById("p1").innerHTML = "My name is : "+usename;
+let age = window.prompt("Enter your AGE: ");
+age = Number(age)
+age+=1;
+console.log(age, typeof age);
+console.log(age+1);
 
-//2nd way
+let a = Number("1");
+console.log(a, typeof a);
+++a;
 
-document.getElementById("btn").onclick = function(){
-    let usename = document.getElementById("Username").value;
-    document.getElementById("nameDisplay").innerHTML = usename;
-}
+console.log(a);
+
+a= String(a);
+console.log(a, typeof a);
+
+a= Boolean("");
+console.log(a, typeof a);
