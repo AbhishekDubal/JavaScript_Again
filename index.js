@@ -1,18 +1,19 @@
+// Math class's pre-defined functions:-
 
-let age = window.prompt("Enter your AGE: ");
-age = Number(age)
-age+=1;
-console.log(age, typeof age);
-console.log(age+1);
+let number = 82.23;
 
-let a = Number("1");
-console.log(a, typeof a);
-++a;
+let x= Math.floor(number);//roundoff the value to LOWEST value.
+x= Math.ceil(number);   // roundoff the value to Bigger value.
+x= Math.round(number);  //roundoff the value to nearest value.( range= 0-4 is 0 and 5-9=1).
+x= Math.pow(2, 4);  //2 power 4=...
+x= Math.sqrt(number);
 
-console.log(a);
+let a=23,b=31,c=43;
 
-a= String(a);
-console.log(a, typeof a);
+let maximum= Math.max(a,b,c);
+let minumum= Math.min(a,b,c);
 
-a= Boolean("");
-console.log(a, typeof a);
+console.log(maximum," is max and", minumum, "is minumum");
+
+let z= Math.PI;
+console.log(z);
