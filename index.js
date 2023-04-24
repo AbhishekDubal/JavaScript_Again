@@ -1,19 +1,25 @@
-// Math class's pre-defined functions:-
 
-let number = 82.23;
+/*
+let side1 =window.prompt("Enter side1= ");
+side1 = Number(side1);
 
-let x= Math.floor(number);//roundoff the value to LOWEST value.
-x= Math.ceil(number);   // roundoff the value to Bigger value.
-x= Math.round(number);  //roundoff the value to nearest value.( range= 0-4 is 0 and 5-9=1).
-x= Math.pow(2, 4);  //2 power 4=...
-x= Math.sqrt(number);
+let side2 =window.prompt("Enter side2= ");
+side2 = Number(side2);
 
-let a=23,b=31,c=43;
+let side3 = Math.sqrt(Math.pow(side1, 2) + Math.pow(side2, 2));
 
-let maximum= Math.max(a,b,c);
-let minumum= Math.min(a,b,c);
+console.log(side3+ " is side 3");
+*/
 
-console.log(maximum," is max and", minumum, "is minumum");
+//Another way to do, on web page:
 
-let z= Math.PI;
-console.log(z);
+document.querySelector("button").onclick = function(){
+    let side1 = document.querySelector("#side1").value;
+    side1 = Number(side1);
+    let side2 = document.querySelector("#side1").value;
+    side2 = Number(side2);
+
+    let side3 = Math.sqrt(Math.pow(side1, 2) + Math.pow(side2, 2));
+
+    document.getElementById("side3Label").innerHTML = "Side 3: "+side3;
+}
