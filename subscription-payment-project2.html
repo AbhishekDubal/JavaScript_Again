@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checked Properties</title>
+    
+</head>
+<body>
+    <label for="Subscribe">Subscribe </label>
+    <input type="checkbox" id="Subscribe">
+    <br><br>
+    <input type="radio" name="Payment" id="upi">
+    <label for="upi">UPI Payment</label>
+    <br>
+    <input type="radio" name="Payment" id="Wallet">
+    <label for="Wallet">Wallet Payment</label>
+    <br>
+    <input type="radio" name="Payment" id="card">
+    <label for="card">Card Payment</label>
+    <hr>
+    <button>Pay</button>
+
+    <script>
+
+        document.querySelector("button").onclick = function(){
+            if(document.getElementById("Subscribe").cheked){
+                console.log(`You've Subscribed`);
+            }else{
+                console.log(`You've not Subscribed`);
+            }
+
+            if (document.getElementById("upi").checked) {
+                console.log("You paid with upi");
+            } else if(document.getElementById("Wallet").checked){
+                console.log("You paid with Wallet");
+            } else if(document.getElementById("card").checked){
+                console.log("You paid with Card");
+            } else {
+                console.log("Please choose a method to make payment!");
+            }
+
+
+        }
+    </script>
+</body>
+</html>
