@@ -16,7 +16,7 @@ console.log(side3+ " is side 3");
 document.querySelector("button").onclick = function(){
     let side1 = document.querySelector("#side1").value;
     side1 = Number(side1);
-    let side2 = document.querySelector("#side1").value;
+    let side2 = document.querySelector("#side2").value;
     side2 = Number(side2);
 
     let side3 = Math.sqrt(Math.pow(side1, 2) + Math.pow(side2, 2));
