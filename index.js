@@ -1,14 +1,12 @@
-//while loop:-
 
-// let sername = "";
-// while(sername == "" || sername == null){
-//     sername = window.prompt("Enter your name: ");
-// }
-// console.log("HEllo "+sername);
+let rows  = window.prompt("ENter The ROWS: ")
+let columns  = window.prompt("ENter The CULUMNS: ")
+let symbol  = window.prompt("ENter The symbol: ")
 
-let name ;
-
-do {
-    name=window.prompt("Enter Your NAME: ")
-} while (name == "");
-console.log("HEY", name);
+for (let i = 1; i <= rows; i+=1) {
+    for(let j = 1; j<= columns; j+=1 ) {
+        // document.createElement("p");
+        document.getElementById("p1").innerHTML += symbol;
+    }
+    document.getElementById("p1").innerHTML += "<br>";
+}
